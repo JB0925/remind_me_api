@@ -15,11 +15,6 @@ from remind_me_api.services.store_and_query_jobs import save_messages, query_num
 templates = Jinja2Templates('templates')
 router = fastapi.APIRouter()
 
-# posted_jobs: List = []
-# messages = check_and_run_jobs()
-# if messages:
-#     save_messages(messages)
-
 
 @router.get('/')
 def index(request: Request):
